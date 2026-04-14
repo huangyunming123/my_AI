@@ -123,6 +123,7 @@ public class AiController {
         return chatClient.prompt(prompt).stream().content();
     }
 
+    //读取文件提示词
     @Value("classpath:/hello.txt")
     private org.springframework.core.io.Resource template;
 
@@ -138,5 +139,13 @@ public class AiController {
         ));
         return chatClient.prompt(prompt).stream().content();
     }
+
+
+
+
+
+
+
+
 
 }

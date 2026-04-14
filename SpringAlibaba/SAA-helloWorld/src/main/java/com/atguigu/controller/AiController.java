@@ -36,10 +36,10 @@ public class AiController {
 //     * @param message 用户输入的文本消息
 //     * @return 大模型返回的响应结果
 //     */
-//    @GetMapping("/stream")
-//    public Flux<String> stream(@RequestParam(name = "message", defaultValue = "你是谁") String message) {
-//        return chatModel.stream(message);
-//    }
+    @GetMapping("/stream")
+    public Flux<String> stream(@RequestParam(name = "message", defaultValue = "你是谁") String message) {
+        return chatModel.stream(message);
+    }
 //
 //    @GetMapping("/client/stream")
 //    public Flux<String> clientStream(@RequestParam(name = "message", defaultValue = "你是谁") String message) {
