@@ -6,6 +6,7 @@ import com.alibaba.cloud.ai.dashscope.chat.DashScopeChatOptions;
 import com.alibaba.cloud.ai.memory.redis.RedisChatMemoryRepository;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
+import org.springframework.ai.chat.memory.ChatMemoryRepository;
 import org.springframework.ai.chat.memory.MessageWindowChatMemory;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.prompt.ChatOptions;
@@ -21,7 +22,6 @@ public class SSAConfig {
 
     // 常用通义千问模型（从百炼平台确认 higher version not match）
     private final String qw = "qwen-plus";
-//    private final String qw = "qwen-max";
 
     private final String deep_seek = "deepseek-r1";
 
@@ -46,12 +46,12 @@ public class SSAConfig {
                 .build();
     }
 
-//
-//
+
+
     @Bean(name = "deepSeekClient")
-    public ChatClient qwClient(@Qualifier("deepSeekModel") ChatModel chatModel ,RedisChatMemoryRepository redisChatMemoryRepository) {
+    public ChatClient qwClient(@Qualifier("deepSeekModel") ChatModel chatModel, RedisChatMemoryRepository chatMemoryRepository) {
         MessageWindowChatMemory windowChatMemory = MessageWindowChatMemory.builder()
-                .chatMemoryRepository(redisChatMemoryRepository)
+                .chatMemoryRepository(chatMemoryRepository)
                 .maxMessages(10)
                 .build();
 
@@ -61,12 +61,12 @@ public class SSAConfig {
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(windowChatMemory).build())
                 .build();
     }
-//
-//
+
+
     @Bean(name = "qwClient")
-    public ChatClient aliClient(@Qualifier("qwModel") ChatModel chatModel , RedisChatMemoryRepository redisChatMemoryRepository) {
+    public ChatClient aliClient(@Qualifier("qwModel") ChatModel chatModel, RedisChatMemoryRepository chatMemoryRepository) {
         MessageWindowChatMemory windowChatMemory = MessageWindowChatMemory.builder()
-                .chatMemoryRepository(redisChatMemoryRepository)
+                .chatMemoryRepository(chatMemoryRepository)
                 .maxMessages(10)
                 .build();
 
