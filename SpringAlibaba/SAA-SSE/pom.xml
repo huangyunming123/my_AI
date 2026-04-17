@@ -41,8 +41,11 @@
             <artifactId>jedis</artifactId>
         </dependency>
 
-
-
+<!--        redis  向量数据库-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-vector-store-redis</artifactId>
+        </dependency>
 
 
         <dependency>

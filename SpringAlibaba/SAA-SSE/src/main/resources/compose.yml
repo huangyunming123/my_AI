@@ -1,0 +1,23 @@
+name: nginx
+services:
+  nginx:
+    container_name: nginx
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /app/docker/nginx01:/usr/share/nginx/html
+      - nginconfig:/etc/nginx
+    restart: always
+    networks:
+      - mynet
+
+#    environment
+#    depends_on: 可以控制启动顺序
+#      - xxx
+# 加载卷的话需要声明
+volumes:
+  nginconfig:
+# 自定义网络的话需要声明
+networks:
+  mynet:
