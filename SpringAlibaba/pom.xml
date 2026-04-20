@@ -13,6 +13,8 @@
     <modules>
         <module>SAA-helloWorld</module>
         <module>SAA-SSE</module>
+        <module>SAA-MCP</module>
+        <module>SAA-MCP_CLIENT</module>
     </modules>
 
     <properties>
