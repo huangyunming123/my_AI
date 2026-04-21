@@ -15,6 +15,7 @@
         <module>SAA-SSE</module>
         <module>SAA-MCP</module>
         <module>SAA-MCP_CLIENT</module>
+        <module>SAA-BAIDU-MCP-Client</module>
     </modules>
 
     <properties>

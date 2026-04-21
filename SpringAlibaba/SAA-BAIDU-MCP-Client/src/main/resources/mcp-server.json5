@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "baidu-map": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@baidumap/mcp-server-baidu-map"
+      ],
+      "env": {
+        "BAIDU_MAP_API_KEY": "qXNAFp6pJrCDi6YE4HaAqGUxWksULnmm"
+      }
+    }
+  }
+}
+//从 npm 下载 @baidumap/mcp-server-baidu-map 包
+//自动安装依赖
+//启动百度地图 MCP Server
+
+//启动 MCP Client
+//↓
+//读取 mcp-server.json5 配置
+//↓
+//执行命令：npx -y @baidumap/mcp-server-baidu-map
+//↓
+//设置环境变量：BAIDU_MAP_API_KEY=qXNAFp6p...
+//↓
+//下载并启动百度地图 MCP Server（Node.js）
+//↓
+//建立 stdio 连接
+//↓
+//获取百度地图工具列表
+//↓
+//AI 可以调用地图相关工具
