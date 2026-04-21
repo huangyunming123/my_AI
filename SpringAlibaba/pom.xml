@@ -16,6 +16,8 @@
         <module>SAA-MCP</module>
         <module>SAA-MCP_CLIENT</module>
         <module>SAA-BAIDU-MCP-Client</module>
+        <module>SpringAI-DEMO</module>
+        <module>Langchain4J-DEMO</module>
     </modules>
 
     <properties>
@@ -25,7 +27,7 @@
 
         <spring-ai.version>1.0.0</spring-ai.version>
         <spring-ai-alibaba.version>1.0.0.2</spring-ai-alibaba.version>
-        <spring-boot.version>3.4.5</spring-boot.version>
+        <spring-boot.version>3.5.5</spring-boot.version>
     </properties>
 
     <dependencyManagement>
@@ -38,6 +40,7 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- 引入spring-ai-alibaba-bom  可以帮你制动匹配spring版本-->
             <dependency>
                 <groupId>com.alibaba.cloud.ai</groupId>
                 <artifactId>spring-ai-alibaba-bom</artifactId>
