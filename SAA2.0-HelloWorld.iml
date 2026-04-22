@@ -3,6 +3,20 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/backport-util-concurrent" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/ch" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/classworlds" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/cn" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/com" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/commons-cli" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/commons-codec" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/commons-logging" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/io" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/jakarta" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/javax" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/junit" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/log4j" />
+      <excludeFolder url="file://$MODULE_DIR$/springAiAlibaba2.0/SAA2.0-HelloWorld/org" />
     </content>
   </component>
 </module>

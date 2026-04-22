@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>SAA2.0-HelloWorld</module>
+        <module>SAA2.0-Start</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -47,6 +48,13 @@
                 <version>${spring-ai.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- BOM 中没有包含 starter-dashscope，需要手动管理版本 -->
+            <dependency>
+                <groupId>com.alibaba.cloud.ai</groupId>
+                <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+                <version>${spring-ai-alibaba.version}</version>
             </dependency>
 
         </dependencies>

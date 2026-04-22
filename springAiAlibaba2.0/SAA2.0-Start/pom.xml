@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>SAA2.0-HelloWorld</artifactId>
+    <artifactId>SAA2.0-Start</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -32,6 +32,12 @@
 
 
         <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-agent-framework</artifactId>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
@@ -43,14 +49,4 @@
         </dependency>
     </dependencies>
 
-
-<!--    优先从远程仓库下载-->
-
-<!--    -->
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>central</id>-->
-<!--            <url>https://repo.maven.apache.org/maven2</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
 </project>
