@@ -11,6 +11,7 @@
     <modules>
         <module>SAA2.0-HelloWorld</module>
         <module>SAA2.0-Start</module>
+        <module>SAA2.0-RAGPLUS</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

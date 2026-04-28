@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class AiConfig {
-
+public class ChatClientConfig {
     String deep_seek = "deepseek-r1";
 
     @Bean
     public DashScopeApi getDashScopeApi() {
         return DashScopeApi.builder()
                 .apiKey("sk-feb9bd5742e14c9f95370ab34e426d33")
+                .workSpaceId("ws-egvrioppe79qkqli")
                 .build();
     }
 
@@ -36,7 +36,6 @@ public class AiConfig {
         return ChatClient.builder(chatModel)
                 .build();
     }
-
 
 
 }
