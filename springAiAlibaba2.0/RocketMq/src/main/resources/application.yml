@@ -1,0 +1,18 @@
+server:
+  port: 8080
+rocketmq:
+  name-server: 124.223.7.89:9876 # 你的 RocketMQ NameServer 地址
+  producer:
+    group: demo-producer-group # 生产者组名
+    send-message-timeout: 10000 # 发送超时时间(毫秒)，增加到10秒
+    compress-message-body-threshold: 4096 # 消息压缩阈值
+    max-message-size: 4194304 # 最大消息大小(4MB)
+    retry-times-when-send-async-failed: 3 # 异步发送失败重试次数
+    retry-next-server: true # 是否重试其他Broker
+    retry-times-when-send-failed: 3 # 同步发送失败重试次数
+    # 解决 Docker 容器内网 IP 无法访问问题
+    vip-channel-enabled: false # 关闭 VIP 通道
+  consumer:
+#    group: test123 # 随意都行
+    # 解决 Docker 容器内网 IP 无法访问问题
+    vip-channel-enabled: false # 关闭 VIP 通道
